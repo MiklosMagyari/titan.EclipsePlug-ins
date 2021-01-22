@@ -198,61 +198,6 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 			else if (entry.getValue() instanceof Boolean)
 				preferenceStore.setDefault(entry.getKey(), (Boolean) entry.getValue());
 		}
-		
-		//		general settings		
-		preferenceStore.setDefault(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-
-		//		 asn1 specific
-		preferenceStore.setDefault(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.BLACK));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.BOLD, true);
-
-		preferenceStore.setDefault(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.VIOLETRED4));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.ROYALBLUE4));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STATUS + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.SADDLE_BROWN));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STATUS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STATUS + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_TAG + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.DARKGREEN));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_TAG + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_TAG + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.SADDLE_BROWN));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.CHOCOLATE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.ROYALBLUE4));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
 
 		// config specific
 		preferenceStore.setDefault(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.FOREGROUND,

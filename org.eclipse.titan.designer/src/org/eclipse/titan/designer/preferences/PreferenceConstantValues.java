@@ -47,8 +47,41 @@ public final class PreferenceConstantValues {
 	public static final Map<String, Object> DefaultColorMap = new HashMap<String, Object>() {{
 		// general settings
 		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.FOREGROUND, VIOLETRED4);
+		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.BACKGROUND, WHITE);
 		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.BACKGROUND, WHITE);
 		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.FOREGROUND, GREY20);
+		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.BACKGROUND, WHITE);
+		
+		// asn1 specific
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.FOREGROUND, VIOLETRED4);
+		put(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.FOREGROUND, ROYALBLUE4);
+		put(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_STATUS + PreferenceConstants.FOREGROUND, SADDLE_BROWN);
+		put(PreferenceConstants.COLOR_STATUS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_STATUS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TAG + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_TAG + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_TAG + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.FOREGROUND, SADDLE_BROWN);
+		put(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.FOREGROUND, CHOCOLATE);
+		put(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.FOREGROUND, ROYALBLUE4);
+		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.BACKGROUND, WHITE);
 		
 		// ttcn3 specific
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, BLACK);
@@ -105,9 +138,42 @@ public final class PreferenceConstantValues {
 	public static final Map<String, Object> DarkColorMap = new HashMap<String, Object>() {{
 		// general settings
 		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.FOREGROUND, LIGHTRED);
+		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.BACKGROUND, WHITE);
 		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.BACKGROUND, WHITE);
 		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.FOREGROUND, LIGHTGREY);
+		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.FOREGROUND, LIGHTORANGE);
 
+		// asn1 specific
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_ASN1_KEYWORDS + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.FOREGROUND, LIGHTRED);
+		put(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_CMIP_VERB + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.FOREGROUND, LIGHTBLUE);
+		put(PreferenceConstants.COLOR_COMPARE_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_STATUS + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_STATUS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_STATUS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TAG + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_TAG + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_TAG + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_STORAGE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_MODIFIER + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.FOREGROUND, LIGHTBLUE);
+		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.BACKGROUND, WHITE);
+		
 		// ttcn3 specific
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, WHITE);
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
