@@ -44,7 +44,7 @@ public final class PreferenceConstantValues {
 	public static final RGB LIGHTORANGE = new RGB(225, 225, 127);
 	
 	@SuppressWarnings("serial")
-	public static final Map<String, RGB> DefaultColorMap = new HashMap<String, RGB>() {{
+	public static final Map<String, Object> DefaultColorMap = new HashMap<String, Object>() {{
 		// general settings
 		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.FOREGROUND, VIOLETRED4);
 		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.FOREGROUND, DARKGREEN);
@@ -52,24 +52,57 @@ public final class PreferenceConstantValues {
 		
 		// ttcn3 specific
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, BLACK);
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.BOLD, true);
 		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.FOREGROUND, ROYALBLUE4);
+		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.FOREGROUND, BLACK);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.BOLD, true);
 		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.FOREGROUND, ROYALBLUE4);
+		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.FOREGROUND, BROWN);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.BOLD, true);
 		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.FOREGROUND, BLACK);
+		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 	}};
 	
 	@SuppressWarnings("serial")
-	public static final Map<String, RGB> DarkColorMap = new HashMap<String, RGB>() {{
+	public static final Map<String, Object> DarkColorMap = new HashMap<String, Object>() {{
 		// general settings
 		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.FOREGROUND, LIGHTRED);
 		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.FOREGROUND, LIGHTGREEN);
@@ -77,20 +110,53 @@ public final class PreferenceConstantValues {
 
 		// ttcn3 specific
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.BOLD, true);
 		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.FOREGROUND, LIGHTBLUE);
+		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.BOLD, true);
 		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.BOLD, true);
 		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 	}};
 	
 	// options for the compiler on how compiler and designer markers interact
