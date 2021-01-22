@@ -7,34 +7,92 @@
  ******************************************************************************/
 package org.eclipse.titan.designer.preferences;
 
+import java.util.HashMap;
+import java.util.Map;
 import org.eclipse.swt.graphics.RGB;
 
 /**
  * Possible values of internal preference settings.
  * 
  * @author Kristof Szabados
+ * @author Miklos Magyari
  * */
 public final class PreferenceConstantValues {
 
 	// syntax coloring
 	public static final RGB GREY20 = new RGB(51, 51, 51);
+	public static final RGB LIGHTGREY = new RGB(230, 230, 230);
 	public static final RGB WHITE = new RGB(255, 255, 255);
 	public static final RGB BLACK = new RGB(0, 0, 0);
 	public static final RGB BROWN = new RGB(165, 42, 42);
 	public static final RGB SADDLE_BROWN = new RGB(139, 69, 69);
 	public static final RGB DARKGREEN = new RGB(0, 100, 0);
+	public static final RGB LIGHTGREEN = new RGB(118, 242, 139);
 	public static final RGB SEAGREEN = new RGB(46, 139, 87);
 	public static final RGB ROYALBLUE4 = new RGB(39, 64, 139);
+	public static final RGB LIGHTBLUE = new RGB(151, 208, 236);
 	public static final RGB BLUE = new RGB(0, 0, 255);
 	public static final RGB CHOCOLATE = new RGB(210, 105, 30);
 	public static final RGB STEELBLUE = new RGB(70, 130, 180);
 	public static final RGB RED = new RGB(255, 0, 0);
 	public static final RGB STEELBLUE4 = new RGB(54, 100, 139);
 	public static final RGB VIOLETRED4 = new RGB(139, 34, 82);
+	public static final RGB LIGHTRED = new RGB(255, 82, 82);
 	public static final RGB GREY30 = new RGB(77, 77, 77);
 	public static final RGB PLUM = new RGB(221, 160, 221);
 	public static final RGB YELLOW = new RGB(225, 225, 127);
+	public static final RGB LIGHTORANGE = new RGB(225, 225, 127);
+	
+	@SuppressWarnings("serial")
+	public static final Map<String, RGB> DefaultColorMap = new HashMap<String, RGB>() {{
+		// general settings
+		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.FOREGROUND, VIOLETRED4);
+		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.FOREGROUND, GREY20);
+		
+		// ttcn3 specific
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, BLACK);
+		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.FOREGROUND, ROYALBLUE4);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.FOREGROUND, BLACK);
+		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.FOREGROUND, ROYALBLUE4);
+		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.FOREGROUND, BROWN);
+		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.FOREGROUND, BLUE);
+		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.FOREGROUND, BLACK);
+		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.FOREGROUND, DARKGREEN);
+		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.FOREGROUND, DARKGREEN);
+	}};
+	
+	@SuppressWarnings("serial")
+	public static final Map<String, RGB> DarkColorMap = new HashMap<String, RGB>() {{
+		// general settings
+		put(PreferenceConstants.COLOR_NORMAL_TEXT + PreferenceConstants.FOREGROUND, LIGHTRED);
+		put(PreferenceConstants.COLOR_STRINGS + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_COMMENTS + PreferenceConstants.FOREGROUND, LIGHTGREY);
 
+		// ttcn3 specific
+		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_PREPROCESSOR + PreferenceConstants.FOREGROUND, LIGHTBLUE);
+		put(PreferenceConstants.COLOR_VISIBILITY_OP + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_TEMPLATE_MATCH + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_VERDICT_OP + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_SUT_OP + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_FUNCTION_OP + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_TYPE + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_TIMER_OP + PreferenceConstants.FOREGROUND, YELLOW);
+		put(PreferenceConstants.COLOR_PORT_OP + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_CONFIG_OP + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_PREDEFINED_OP + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_BOOLEAN_CONST + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_TTCN3_VERDICT_CONST + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_OTHER_CONST + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+	}};
+	
 	// options for the compiler on how compiler and designer markers interact
 	public static final String COMPILEROPTIONSTAY = "Stay unchanged";
 	public static final String COMPILEROPTIONOUTDATE = "Become outdated";
