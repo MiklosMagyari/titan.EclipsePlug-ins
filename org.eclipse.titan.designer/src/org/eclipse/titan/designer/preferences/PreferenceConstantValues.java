@@ -83,6 +83,23 @@ public final class PreferenceConstantValues {
 		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.BACKGROUND, WHITE);
 		
+		// config specific
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.FOREGROUND, BLACK);
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.FOREGROUND, SEAGREEN);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.FOREGROUND, SEAGREEN);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.FOREGROUND, SADDLE_BROWN);
+		put(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.BACKGROUND, WHITE);
+		
 		// ttcn3 specific
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, BLACK);
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
@@ -173,6 +190,23 @@ public final class PreferenceConstantValues {
 		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.FOREGROUND, LIGHTBLUE);
 		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
 		put(PreferenceConstants.COLOR_ACCESS_TYPE + PreferenceConstants.BACKGROUND, WHITE);
+
+		// config specific
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.FOREGROUND, WHITE);
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.FOREGROUND, LIGHTGREEN);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.BACKGROUND, WHITE);
+		put(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.BOLD, true);
+		put(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.FOREGROUND, LIGHTORANGE);
+		put(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.USEBACKGROUNDCOLOR, false);
+		put(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.BACKGROUND, WHITE);
 		
 		// ttcn3 specific
 		put(PreferenceConstants.COLOR_TTCN3_KEYWORDS + PreferenceConstants.FOREGROUND, WHITE);

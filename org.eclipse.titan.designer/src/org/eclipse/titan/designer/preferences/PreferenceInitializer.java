@@ -190,7 +190,7 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 	}
 
 	private void color(final IPreferenceStore preferenceStore) {
-		// 		color theme dependant
+		// color theme dependent
 		Map<String, Object> colorMap = getColorMap();
 		for (Map.Entry<String, Object> entry : colorMap.entrySet()) {
 			if (entry.getValue() instanceof RGB)
@@ -198,34 +198,6 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 			else if (entry.getValue() instanceof Boolean)
 				preferenceStore.setDefault(entry.getKey(), (Boolean) entry.getValue());
 		}
-
-		// config specific
-		preferenceStore.setDefault(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.BLACK));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_CONFIG_KEYWORDS + PreferenceConstants.BOLD, true);
-
-		preferenceStore.setDefault(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.SEAGREEN));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.USEBACKGROUNDCOLOR, true);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_SECTION_TITLE + PreferenceConstants.BOLD, true);
-
-		preferenceStore.setDefault(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.SEAGREEN));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_FILE_AND_CONTROL_MASK_OPTIONS + PreferenceConstants.BOLD, true);
-
-		preferenceStore.setDefault(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.FOREGROUND,
-				StringConverter.asString(PreferenceConstantValues.SADDLE_BROWN));
-		preferenceStore.setDefault(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.USEBACKGROUNDCOLOR, false);
-		preferenceStore.setDefault(PreferenceConstants.COLOR_EXTERNAL_COMMAND_TYPES + PreferenceConstants.BACKGROUND,
-				StringConverter.asString(PreferenceConstantValues.WHITE));
 	}
 
 	private void debug(final IPreferenceStore preferenceStore) {
